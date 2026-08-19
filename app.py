@@ -19,7 +19,7 @@ st.set_page_config(
 # -----------------------------
 @st.cache_resource
 def load_model():
-    return joblib.load("/content/customer_churn_model.pkl")
+    return joblib.load("customer_churn_model.pkl")
 
 try:
     model = load_model()
