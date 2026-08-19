@@ -24,8 +24,9 @@ def load_model():
 try:
     model = load_model()
     model_loaded = True
-except:
+except Exception as e:
     model_loaded = False
+    st.error(f"Actual Error: {e}")
 
 # -----------------------------
 # TITLE
